@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --sidebar_bg: #000;
+    --content_bg: #141922;
+    --player_bg: #141922;
+}
+
 body{
     height: 100vh;
 }
@@ -30,18 +36,22 @@ LAYOUT RULES
 
 .player{
     flex-shrink: 0;
+    background-color: var(--player_bg);
 }
 
 .main-container{
     flex-grow: 1;
+    padding: 0;
 }
 
 .sidebar{
     flex-basis: 200px;
+    background-color: var(--sidebar_bg);
 }
 
 .content{
     flex-grow: 1;
+    background-color: var(--content_bg);
 }
 
 
@@ -49,6 +59,7 @@ LAYOUT RULES
 
     .sidebar{
         flex-basis: 10px;
+
     }
 
 }

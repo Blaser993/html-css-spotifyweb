@@ -50,9 +50,10 @@ LAYOUT RULES
     display: flex;
 }
 
-.cross-direction{
-    flex-direction: column;
+.wrap{
+    flex-wrap: wrap;
 }
+
 
 .player{
     flex-shrink: 0;
@@ -75,11 +76,23 @@ LAYOUT RULES
 }
 
 
-/* ALIGN AND SPACING */
+/* ALIGN AND SPACING MODIFYERS */
+
 .space--between{
     justify-content:space-between;
 }
 
+.center{
+    align-items: center;
+}
+
+.cross--center{
+    justify-content: center;
+}
+
+.cross--direction{
+    flex-direction: column;
+}
 
 
 /* MEDIAQUERY LAYOUT */

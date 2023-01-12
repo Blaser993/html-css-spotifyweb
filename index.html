@@ -11,7 +11,7 @@
 </head>
 
 
-<body class="row cross-direction">
+<body class="row cross--direction">
 
     <div class="main-container row">
         
@@ -27,12 +27,14 @@
 
     <!-- INIZIO PLAYER -->
     <div class="player">
-        <div class="row space--between">
-            <div class="player__song debug">
-                song
-                <article class="row">
 
-                    <article class="row">
+        <div class="row center space--between">
+
+            <div class="player__song debug">
+                
+                <article class="row center">
+
+                    <article class="row center">
 
                         <figure class="song__image debug">
                             <img src="./img/sinister.jpeg" alt="sinister cover">
@@ -69,7 +71,57 @@
 
 
             </div>
-            <div class="player__timeline">timeline</div>
+
+            <div class="player__timeline">
+
+                <div class="timeline__container cross--direction row">
+
+                    <div class="timeline__commands cross--center row wrap ">
+
+                        <ul class="list-menu row">
+
+                            <li class="list-menu__item">
+                                <a href="#">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-backward-step"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-forward-step"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline__time row">
+                        <div>inizio</div>
+                        <div>linea</div>
+                        <div>fine</div>
+                    </div>
+
+                </div>
+
+            </div>
+
             <div class="player__volume">volume</div>
         </div>
     </div>

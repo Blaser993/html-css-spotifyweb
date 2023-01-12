@@ -43,3 +43,12 @@ LAYOUT RULES
 .content{
     flex-grow: 1;
 }
+
+
+@media screen and (max-width:552px){
+
+    .sidebar{
+        flex-basis: 10px;
+    }
+
+}

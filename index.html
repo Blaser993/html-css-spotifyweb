@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <script src="https://kit.fontawesome.com/3243ace8ec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/style.css">
 
 </head>
@@ -27,34 +28,44 @@
     <!-- INIZIO PLAYER -->
     <div class="player">
         <div class="row space--between">
-            <div class="player__song">
+            <div class="player__song debug">
                 song
-                <article>
-                    <figure>
-                        <img src="./img/sinister.jpeg" alt="sinister cover">
-                    </figure>
-                    <hgroup>
-                        <h4>
-                            title
-                        </h4>
-                        <h5>
-                            subtitle
-                        </h5>
-                    </hgroup>
-                </article>
+                <article class="row">
 
-                <ul>
-                    <li>
-                        <a href="#">
-                            cuore
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            folder
-                        </a>
-                    </li>
-                </ul>
+                    <article class="row">
+
+                        <figure class="song__image debug">
+                            <img src="./img/sinister.jpeg" alt="sinister cover">
+                        </figure>
+
+
+                        <hgroup class="corss-direction">
+                            <h4>
+                                title
+                            </h4>
+                            <h5>
+                                subtitle
+                            </h5>
+                        </hgroup>
+
+
+                    </article>
+
+                    <ul class="list-menu row">
+                        <li class="list-menu__item">
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </li>
+                        <li class="list-menu__item">
+                            <a href="#">
+                                <i class="fa-regular fa-folder"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                
+                
 
 
             </div>

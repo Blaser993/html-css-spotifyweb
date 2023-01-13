@@ -46,6 +46,16 @@ h4{
     margin: 0;
 }
 
+h3{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 12px ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 
 figure{
     margin: 0;
@@ -105,7 +115,7 @@ LAYOUT RULES
 .sidebar{
     flex-basis: 230px;
     background-color: var(--sidebar_bg);
-    overflow-y: hidden;
+    overflow-y:visible;
 }
 
 .content{

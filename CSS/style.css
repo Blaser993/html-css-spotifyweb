@@ -194,6 +194,13 @@ PLAYER RULES
     margin-right: 16px;
 }
 
+
+/* VOGLIO TOGLIERE IL MARGIN-RIGTH ALLE ULTIME ICONE DELLA LISTA */
+.player .list-menu__item a :last-of-type{
+    padding-right: 0px;
+}
+/* ----- */
+
 .doble{
     font-size: calc(var(--small-i)*2);
     margin: 0 16px;

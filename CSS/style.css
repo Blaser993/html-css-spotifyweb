@@ -47,7 +47,6 @@ h4{
 }
 
 
-
 figure{
     margin: 0;
 }
@@ -143,7 +142,7 @@ LAYOUT RULES
 }
 
 .spacing--verysmall{
-    padding: 6px 24px;
+    padding: 0 24px;
 }
 
 
@@ -211,7 +210,6 @@ PLAYER RULES
     margin: 0;
 }
 
-
 .size--dobled{
     font-size: calc(var(--small-i)*2);
     margin: 0 16px;
@@ -231,6 +229,16 @@ PLAYER RULES
 
 .icon.icon--text{
     color: var(--baisc_tx);
+}
+
+.icon--thic{
+
+}
+
+.icon.icon--medium{
+    line-height: 36px;
+    font-size: 24px;
+    margin-right: 8px;
 }
 
 .icon{
@@ -279,6 +287,23 @@ SIDEBAR RULES
 
 .sidebar__cta{
     margin-top: auto;
+}
+
+.sidebar__nav .active ::before{
+    display: inline-block;
+    border-left: var(--active) solid 4px;
+    margin-left: auto;
+    padding-left: 20px;
+    margin-left: -24px;
+}
+
+.active--tx{
+    color: var(--highlight_tx);
+}
+
+
+.sidebar h4{
+    color: var(--shadow_tx);
 }
 
 

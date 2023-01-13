@@ -46,6 +46,10 @@ h4{
     margin: 0;
 }
 
+figure{
+    margin: 0;
+}
+
 
 a {
     text-decoration: none;
@@ -234,6 +238,25 @@ PLAYER RULES
     }
 
 }
+
+
+
+/* #######################################################
+
+SIDEBAR RULES
+
+####################################################### */
+
+
+.sidebar .row{
+    height: 100%;
+}
+
+.sidebar__cta{
+    margin-top: auto;
+}
+
+
 
 
 

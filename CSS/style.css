@@ -8,9 +8,10 @@
     --sidebar_bg: #000;
     --content_bg: #141922;
     --player_bg: #282828;
-    --baisc_tx: #c1c1c1;
-    --highlight_tx: #fff;
     --shadow_tx: #5A5A5A;
+    --baisc_tx: #c1c1c1;
+    --highlight: #D2D2D2;
+    --highlight_tx: #fff;
     --active: #9AE32D;
     --cover: (0, 0, 0, 0.5);
 }
@@ -66,7 +67,7 @@ LAYOUT RULES
 }
 
 .sidebar{
-    flex-basis: 200px;
+    flex-basis: 230px;
     background-color: var(--sidebar_bg);
 }
 
@@ -100,7 +101,7 @@ LAYOUT RULES
 @media screen and (max-width:552px){
 
     .sidebar{
-        flex-basis: 10px;
+        flex-basis: 50px;
 
     }
 

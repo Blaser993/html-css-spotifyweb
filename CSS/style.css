@@ -46,6 +46,8 @@ h4{
     margin: 0;
 }
 
+
+
 figure{
     margin: 0;
 }
@@ -104,7 +106,7 @@ LAYOUT RULES
 .sidebar{
     flex-basis: 230px;
     background-color: var(--sidebar_bg);
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .content{
@@ -124,6 +126,10 @@ LAYOUT RULES
     align-items: center;
 }
 
+.baseline{
+    align-items: baseline;
+}
+
 .cross--center{
     justify-content: center;
 }
@@ -136,7 +142,9 @@ LAYOUT RULES
     padding: 12px;
 }
 
-
+.spacing--verysmall{
+    padding: 6px 24px;
+}
 
 
 /* MEDIAQUERY LAYOUT */
@@ -219,6 +227,10 @@ PLAYER RULES
 
 .icon.icon--disabled{
     color: var(--shadow_tx);
+}
+
+.icon.icon--text{
+    color: var(--baisc_tx);
 }
 
 .icon{

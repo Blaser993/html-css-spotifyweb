@@ -124,12 +124,21 @@ PLAYER RULES
 
 .player__volume,
 .player__song{
-    max-width: 230px;
+    width: 230px;
 }
 
 .player__timeline{
     flex-basis: 40%;
     max-width: 560px;
+}
+
+
+.song__image img{
+    height: 42px;
+}
+
+.song__image{
+    margin: 0;
 }
 
 

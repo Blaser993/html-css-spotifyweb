@@ -297,7 +297,7 @@ SIDEBAR RULES
     margin-left: -24px;
 }
 
-.active--tx{
+.sidebar .active--tx {
     color: var(--highlight_tx);
 }
 

@@ -55,6 +55,10 @@ LAYOUT RULES
     flex-wrap: wrap;
 }
 
+.grow{
+    flex-grow: 100;
+}
+
 
 .player{
     flex-shrink: 0;
@@ -121,7 +125,24 @@ PLAYER RULES
 
 .player__timeline{
     flex-basis: 40%;
-    max-width: 580px;
+    max-width: 560px;
+}
+
+
+.progress-bar{
+    display: relative;
+    height: 4px;
+    min-width: 50px;
+    border-radius: 50px;
+    background-color: var(--shadow_tx);
+}
+
+.progress-bar__progress{
+    height: 4px;
+    position: absolute;
+    width: 2%;
+    border-radius: 50px 0px 0px 50px;
+    background-color: var(--baisc_tx);
 }
 
 
@@ -132,7 +153,7 @@ debug RULES
 ####################################################### */
 
 -div{
-    padding: 24px;
+    padding: 4px;
     border: 2px solid red;
 }
 

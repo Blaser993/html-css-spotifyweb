@@ -11,7 +11,7 @@
     --sidebar_bg: #000;
     --content_bg: #141922;
     --player_bg: #282828;
-    --shadow_tx: #5A5A5A;
+    --shadow_tx: #878787;
     --baisc_tx: #c1c1c1;
     --highlight: #D2D2D2;
     --highlight_tx: #fff;
@@ -28,13 +28,21 @@ body{
     margin: 0;
 }
 
+h6{
+    font-size: 8px;
+    color: var(--highlight_tx);
+    margin: 0;
+}
+
 h5{
     font-size: 8px;
     margin: 0;
 }
 
 h4{
+    font-weight: 600;
     font-size: 12px;
+    color: var(--highlight_tx);
     margin: 0;
 }
 
@@ -124,6 +132,8 @@ LAYOUT RULES
 }
 
 
+
+
 /* MEDIAQUERY LAYOUT */
 
 @media screen and (max-width:552px){
@@ -190,11 +200,24 @@ PLAYER RULES
 }
 
 .timeline__time{
-    padding-top: 0px;
+    padding-top: 4px;
 }
 
 .timeline__commands :first-child{
-    margin-bottom: 4px;
+    margin-bottom: 0px;
+}
+
+.icon.icon--disabled{
+    color: var(--shadow_tx);
+}
+
+.icon{
+    color: var(--highlight_tx);
+}
+
+.list-menu__item.grow{
+    padding-top: 16px;
+    margin-right: 12px;
 }
 
 

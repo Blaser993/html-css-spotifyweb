@@ -114,6 +114,15 @@ PLAYER RULES
 
 ####################################################### */
 
+.player__volume,
+.player__song{
+    max-width: 230px;
+}
+
+.player__timeline{
+    flex-basis: 40%;
+    max-width: 580px;
+}
 
 
 /* #######################################################

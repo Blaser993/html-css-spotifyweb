@@ -23,6 +23,7 @@ body{
     height: 100vh;
     color:var(--baisc_tx);
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 
@@ -36,6 +37,7 @@ ul,
 ol,
 li{
     list-style-type: none;
+    padding: 0;
 }
 
 img {
@@ -77,10 +79,12 @@ LAYOUT RULES
 .sidebar{
     flex-basis: 230px;
     background-color: var(--sidebar_bg);
+    overflow: hidden;
 }
 
 .content{
     flex-grow: 1;
+    overflow-y: auto;
     background-color: var(--content_bg);
 }
 

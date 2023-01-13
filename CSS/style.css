@@ -17,12 +17,24 @@
     --highlight_tx: #fff;
     --active: #9AE32D;
     --cover: (0, 0, 0, 0.5);
+
+    --small-i:16px;
 }
 
 body{
     height: 100vh;
     color:var(--baisc_tx);
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h5{
+    font-size: 8px;
+    margin: 0;
+}
+
+h4{
+    font-size: 12px;
     margin: 0;
 }
 
@@ -107,6 +119,10 @@ LAYOUT RULES
     flex-direction: column;
 }
 
+.spacing--small{
+    padding: 12px;
+}
+
 
 /* MEDIAQUERY LAYOUT */
 
@@ -143,6 +159,7 @@ PLAYER RULES
 
 .song__image{
     margin: 0;
+    flex-shrink: 0;
 }
 
 
@@ -161,6 +178,25 @@ PLAYER RULES
     border-radius: 50px 0px 0px 50px;
     background-color: var(--baisc_tx);
 }
+
+.player .list-menu__item a{
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.doble{
+    font-size: calc(var(--small-i)*2);
+    margin: 0 16px;
+}
+
+.timeline__time{
+    padding-top: 0px;
+}
+
+.timeline__commands :first-child{
+    margin-bottom: 4px;
+}
+
 
 
 /* #######################################################

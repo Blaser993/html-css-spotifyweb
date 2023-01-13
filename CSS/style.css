@@ -252,6 +252,20 @@ SIDEBAR RULES
     height: 100%;
 }
 
+.sidebar__logo{
+    width: auto;
+}
+
+.logo__extended{
+    width: 100%x;
+    max-height: 42px;
+    margin: 0;
+}
+
+.logo__small{
+    display: none;
+}
+
 .sidebar__cta{
     margin-top: auto;
 }

@@ -199,11 +199,7 @@ PLAYER RULES
 }
 
 
-
-
-
-
-.doble{
+.size--dobled{
     font-size: calc(var(--small-i)*2);
     margin: 0 16px;
 }

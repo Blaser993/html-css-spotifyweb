@@ -227,6 +227,16 @@ PLAYER RULES
     margin-right: 12px;
 }
 
+/* MEDIAQUERY PLAYER */
+
+@media screen and (max-width:552px){
+
+    .player__song .row :last-child {
+        flex-direction: column;
+    }
+
+}
+
 
 
 /* #######################################################

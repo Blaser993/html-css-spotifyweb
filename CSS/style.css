@@ -121,7 +121,7 @@ LAYOUT RULES
 .sidebar{
     flex-basis: 230px;
     background-color: var(--sidebar_bg);
-    overflow-y:visible;
+    overflow: hidden;
 }
 
 .content{
@@ -296,7 +296,9 @@ PLAYER RULES
 SIDEBAR RULES
 
 ####################################################### */
-
+.sidebar{
+    padding-bottom:12px;
+}
 
 .sidebar .row{
     height: 100%;
@@ -312,6 +314,7 @@ SIDEBAR RULES
     max-height: 42px;
     object-fit: cover;
     margin: 0;
+    padding: 16px 0;
 }
 
 .logo__small{
@@ -344,8 +347,24 @@ SIDEBAR RULES
     color: var(--shadow_tx);
 }
 
+.sidebar__cta img{
+    height: 12px;
+    padding: 0;
+    margin-right: 12px;
+}
+
+.border{
+    border-bottom: 1px solid var(--shadow_tx);
+}
 
 
+.sidebar__profile img{
+    background-color: var(--shadow_tx);
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    padding: 0;
+}
 
 
 /* MEDIAQYERY SIDEBAR */

@@ -176,7 +176,7 @@ LAYOUT RULES
 @media screen and (max-width:552px){
 
     .sidebar{
-        flex-basis: 50px;
+        max-width: 50px;
 
     }
 
@@ -372,6 +372,9 @@ SIDEBAR RULES
 
 @media screen and (max-width:552px){
 
+    .sidebar{
+        margin-bottom:0;
+    }
     .sidebar .logo__extended{
         display: none;
     }
@@ -379,6 +382,73 @@ SIDEBAR RULES
     .sidebar .logo__small{
         display: block;
     }
+
+    .sidebar__article{
+        display: none;
+    }
+
+    .sidebar  .logo__small{
+        display: block;
+        min-width: 26px;
+    }
+
+    .sidebar .active{
+        border: none;
+        margin: 0px;
+    }
+
+    .sidebar .spacing--verysmall {
+        padding: 14px;
+    }
+
+    .sidebar .spacing--small{
+        padding: 14px;
+    }
+
+    .sidebar .spacing--li{
+        padding: 0px;
+    }
+
+    .sidebar .icon-svg{
+        padding:0;
+        font-size: 22px;
+        height: 22px;
+        line-height: 22px;
+    }
+
+    .sidebar .sidebar__cta .icon-svg{
+        height: 12px;
+    }
+    
+    .sidebar .center{
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .sidebar .border{
+        border: none;
+    }
+    
+    .sidebar h3,
+    .sidebar h4,
+    .sidebar h5{
+        display: none;
+    }
+    
+    .sidebar img,
+    .sidebar .icon{
+        margin: 0;
+    
+    }
+
+    .sidebar figure :last-of-type{
+        width: 50px;
+    }
+
+    .sidebar li a:last-of-type{
+        display: none;
+    }
+
 
 }
 

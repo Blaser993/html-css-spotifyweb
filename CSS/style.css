@@ -116,12 +116,13 @@ LAYOUT RULES
 .main-container{
     flex-grow: 1;
     padding: 0;
+    overflow: hidden;
 }
 
 .sidebar{
     flex-basis: 230px;
     background-color: var(--sidebar_bg);
-    overflow: hidden;
+
 }
 
 .content{

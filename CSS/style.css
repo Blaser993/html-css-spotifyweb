@@ -47,13 +47,19 @@ h4{
 }
 
 h3{
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--shadow_tx);
+    padding-left:12px ;
+    margin: 0;
 }
 
 h2{
     font-size: 12px ;
     font-weight: 600;
     text-transform: uppercase;
+    color: var(--highlight_tx);
+    margin: 0;
 }
 
 
@@ -159,6 +165,10 @@ LAYOUT RULES
     padding: 6px 0px;
 }
 
+.spacing--li--medium{
+    padding: 11px 0px;
+}
+
 
 /* MEDIAQUERY LAYOUT */
 
@@ -245,9 +255,7 @@ PLAYER RULES
     color: var(--baisc_tx);
 }
 
-.icon--thic{
 
-}
 
 .icon.icon--medium{
     line-height: 36px;
@@ -257,6 +265,13 @@ PLAYER RULES
 
 .icon{
     color: var(--highlight_tx);
+}
+
+.icon.icon--big{
+    font-size: 46px;
+    height: 46px;
+    padding:0;
+    margin: 0;
 }
 
 .list-menu__item.grow{
@@ -285,6 +300,10 @@ SIDEBAR RULES
 
 .sidebar .row{
     height: 100%;
+}
+
+.sidebar ul{
+    margin: 12px 0;
 }
 
 
@@ -324,6 +343,8 @@ SIDEBAR RULES
 .sidebar a h4{
     color: var(--shadow_tx);
 }
+
+
 
 
 

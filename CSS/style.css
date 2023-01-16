@@ -122,13 +122,21 @@ LAYOUT RULES
 .sidebar{
     flex-basis: 230px;
     background-color: var(--sidebar_bg);
-
 }
 
 .content{
     flex-grow: 1;
     overflow-y: auto;
     background-color: var(--content_bg);
+}
+
+.container-nav{
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
 }
 
 
@@ -495,6 +503,27 @@ SIDEBAR RULES
 }
 
 
+/* #######################################################
+
+debug RULES
+
+####################################################### */
+
+.content{
+    position: relative;
+}
+
+.content__cta{
+    position: sticky;
+    top: 0;
+}
+
+.card{
+    flex-basis: 180px;
+}
+
+
+
 
 /* #######################################################
 
@@ -502,11 +531,22 @@ debug RULES
 
 ####################################################### */
 
--div{
+.content div{
     border: 2px solid red;
+    padding: 12px;
+    min-height: 100px;
 }
 
 .debug{
     border: salmon dashed 2px;
     padding: 12px;
+}
+
+
+.content ul{
+    gap: 12px;
+}
+
+.content li a{
+    padding: 6px;
 }

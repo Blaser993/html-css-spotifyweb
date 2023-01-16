@@ -518,8 +518,27 @@ debug RULES
     top: 0;
 }
 
+.content ul{
+    gap: 12px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content li a{
+    padding: 6px;
+    align-items: flex-start;
+    gap: 6px;
+}
+
 .card{
     flex-basis: 180px;
+}
+
+.nav-active {
+    height: 3px;
+    width: 36px;
+    background-color: var(--active);
+    margin: auto;
 }
 
 
@@ -533,8 +552,8 @@ debug RULES
 
 .content div{
     border: 2px solid red;
-    padding: 12px;
-    min-height: 100px;
+    -padding: 12px;
+    -min-height: 10px;
 }
 
 .debug{
@@ -543,10 +562,3 @@ debug RULES
 }
 
 
-.content ul{
-    gap: 12px;
-}
-
-.content li a{
-    padding: 6px;
-}

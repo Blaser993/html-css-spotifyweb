@@ -518,6 +518,11 @@ CONTENT RULES
     padding: 26px 4px;
 }
 
+.content__cta{
+    position: sticky;
+    top: 0;
+}
+
 .content__cta .row{
     justify-content: flex-end;
 }
@@ -532,15 +537,24 @@ CONTENT RULES
     text-transform:uppercase;
 }
 
-.content__cta{
-    position: sticky;
-    top: 0;
+.nav-active {
+    height: 3px;
+    width: 36px;
+    margin: auto;
+    background-color: var(--active);
 }
 
 .content ul{
-    gap: 12px;
+    gap: 26px;
     justify-content: center;
     align-items: flex-start;
+}
+
+.content__nav h4{
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--shadow_tx);
 }
 
 .content li a{
@@ -553,12 +567,11 @@ CONTENT RULES
     flex-basis: 180px;
 }
 
-.nav-active {
-    height: 3px;
-    width: 36px;
-    margin: auto;
-    background-color: var(--active);
-}
+
+
+
+
+
 
 
 /* MEDIAQUERY PER CONTENT */

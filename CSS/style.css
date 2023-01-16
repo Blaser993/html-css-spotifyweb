@@ -617,6 +617,16 @@ CONTENT RULES
     text-transform: capitalize;
 }
 
+.content__popular h2{
+    font-weight: 600;
+}
+
+.content__popular img{
+    border-radius: 999px;
+}
+
+
+
 
 
 

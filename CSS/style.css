@@ -145,7 +145,7 @@ LAYOUT RULES
 
 .container{
     margin: 0 auto;
-    padding: 8px;
+    padding: 18px;
 }
 
 
@@ -574,7 +574,7 @@ CONTENT RULES
 
 
 .container .row{
-    gap: 10px;
+    gap: 12px;
 }
 
 .card{
@@ -587,8 +587,8 @@ CONTENT RULES
   gap: 12px; 
 }
 
-.card .description__title,
-.card .description__subtitle{
+.description__title,
+.description__subtitle{
     flex-basis: 100%;
     text-align: center;
 }
@@ -600,6 +600,23 @@ CONTENT RULES
 .card .description__subtitle{
     font-size: 10px;
 }
+
+
+.container article h1,
+.container > article h3{
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+.container > article{
+    margin-bottom: 26px;
+}
+
+.content__personal h2{
+    text-transform: capitalize;
+}
+
 
 
 

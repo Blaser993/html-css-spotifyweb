@@ -62,6 +62,14 @@ h2{
     margin: 0;
 }
 
+h1{
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+    color: var(--highlight_tx);
+    margin-bottom: 16px;
+}
+
 
 figure{
     margin: 0;
@@ -137,6 +145,7 @@ LAYOUT RULES
 
 .container{
     margin: 0 auto;
+    padding: 8px;
 }
 
 
@@ -563,12 +572,34 @@ CONTENT RULES
     gap: 6px;
 }
 
+
+.container .row{
+    gap: 10px;
+}
+
 .card{
     flex-basis: 180px;
 }
 
+.card .card__description{
+  padding: 16px 0;
+  justify-content: center; 
+  gap: 12px; 
+}
 
+.card .description__title,
+.card .description__subtitle{
+    flex-basis: 100%;
+    text-align: center;
+}
 
+.card .description__title{
+    font-size: 12px;
+}
+
+.card .description__subtitle{
+    font-size: 10px;
+}
 
 
 
@@ -595,7 +626,7 @@ debug RULES
 ####################################################### */
 
 .content div{
-    border: 2px solid red;
+    -border: 2px solid red;
     -padding: 12px;
     -min-height: 10px;
 }

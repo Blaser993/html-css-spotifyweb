@@ -337,7 +337,7 @@ SIDEBAR RULES
 
 .icon-svg{
     height: 24px;
-    padding: 0 12px 0 24px; 
+    padding: 0 12px 0 24px;
 }
 
 .active .icon-svg{
@@ -397,7 +397,7 @@ SIDEBAR RULES
         margin: 6px auto;
         align-content: center;
     }
-    
+
     .sidebar .logo__small{
         display: block;
         max-width: 50%;
@@ -458,26 +458,26 @@ SIDEBAR RULES
     .sidebar .sidebar__cta .icon-svg{
         height: 12px;
     }
-    
+
     .sidebar .center{
         align-items: center;
         justify-items: center;
     }
-    
+
     .sidebar .border{
         border: none;
     }
-    
+
     .sidebar h3,
     .sidebar h4,
     .sidebar h5{
         display: none;
     }
-    
+
     .sidebar img,
     .sidebar .icon{
         margin: 0;
-    
+
     }
 
     .sidebar figure :last-of-type{
@@ -505,7 +505,7 @@ SIDEBAR RULES
 
 /* #######################################################
 
-debug RULES
+CONTENT RULES
 
 ####################################################### */
 
@@ -539,6 +539,18 @@ debug RULES
     width: 36px;
     background-color: var(--active);
     margin: auto;
+}
+
+
+/* MEDIAQUERY PER CONTENT */
+
+
+@media screen and (max-width:552px) {
+
+    .card{
+        min-width:210px;
+    }
+
 }
 
 

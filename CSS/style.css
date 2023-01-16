@@ -514,6 +514,25 @@ CONTENT RULES
 }
 
 .content__cta{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 26px 4px;
+}
+
+.content__cta .row{
+    justify-content: flex-end;
+}
+
+.content__cta .button{
+    line-height: 46px;
+    padding:0 42px;
+    border: 1px solid var(--highlight);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+
+.content__cta{
     position: sticky;
     top: 0;
 }
@@ -537,8 +556,8 @@ CONTENT RULES
 .nav-active {
     height: 3px;
     width: 36px;
-    background-color: var(--active);
     margin: auto;
+    background-color: var(--active);
 }
 
 

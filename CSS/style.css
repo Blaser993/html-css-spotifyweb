@@ -689,17 +689,19 @@ debug RULES
 HOVER RULES
 
 ####################################################### */
-/* <i class="icon size--dobled fa-regular fa-circle-play"></i> */
 
 .card .card__image{
     width: 100%;
     position: relative;
+    z-index: 10;
     align-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content figure .icon{
     display: none;
-    position: sticky;
+    position: absolute;
+    z-index: 100;
     text-align: center;
     flex-grow: 1;
     aspect-ratio: 1;
@@ -715,17 +717,9 @@ HOVER RULES
     transform: translate(0px, -16px);
 }
 
-
-.card:hover .hide{
-    display: none;
-}
-
 .card:hover figure .icon{
     display: block;
     min-height: 100%;
-
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
-.card:hover .card__image{
-    background-color: rgba(0, 0, 0, 0.5);
-}

@@ -143,10 +143,6 @@ LAYOUT RULES
     margin: 0 auto;
 }
 
-.container{
-    margin: 0 auto;
-    padding: 18px;
-}
 
 
 /* ALIGN AND SPACING MODIFYERS */
@@ -573,12 +569,17 @@ CONTENT RULES
 }
 
 
+.container{
+    margin: 0 12px;
+}
+
+
 .container .row{
-    gap: 12px;
+    row-gap: 12px;
 }
 
 .card{
-    flex-basis: 180px;
+    flex-basis: calc(100%/6);
 }
 
 .card .card__description{
@@ -635,10 +636,20 @@ CONTENT RULES
 /* MEDIAQUERY PER CONTENT */
 
 
-@media screen and (max-width:552px) {
+@media screen and (max-width:980px) {
 
     .card{
-        min-width:210px;
+        flex-basis:calc(100%/4);
+    }
+
+}
+
+
+
+@media screen and (max-width:712px) {
+
+    .card{
+        flex-basis:calc(100%/2);
     }
 
 }
@@ -660,7 +671,7 @@ debug RULES
 
 .debug{
     border: salmon dashed 2px;
-    padding: 12px;
+    -padding: 12px;
 }
 
 

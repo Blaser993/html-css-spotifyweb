@@ -571,6 +571,7 @@ CONTENT RULES
 
 .container{
     margin: 0 12px;
+    margin-bottom: 12px;
 }
 
 
@@ -579,7 +580,8 @@ CONTENT RULES
 }
 
 .card{
-    flex-basis: calc(100%/6);
+    flex-basis: calc(100%/6 - 20px) ;
+    margin: 0 10px;
 }
 
 .card .card__description{
@@ -636,20 +638,22 @@ CONTENT RULES
 /* MEDIAQUERY PER CONTENT */
 
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1140px) {
 
     .card{
-        flex-basis:calc(100%/4);
+        flex-basis: calc(100%/4 - 12px) ;
+       margin: 0 6px;
     }
 
 }
 
 
 
-@media screen and (max-width:712px) {
+@media screen and (max-width:796px) {
 
     .card{
-        flex-basis:calc(100%/2);
+        flex-basis: calc(100%/2 - 16px) ;
+       margin: 0 8px;
     }
 
 }

@@ -223,18 +223,7 @@ PLAYER RULES
 }
 
 
-.progress-bar{
-    min-width: 50px;
-    border-radius: 50px;
-    background-color: var(--shadow_tx);
-}
 
-.progress-bar__progress{
-    height: 4px;
-    width: 20%;
-    border-radius: 50px;
-    background-color: var(--baisc_tx);
-}
 
 .player .list-menu__item a{
     font-size: 16px;
@@ -691,6 +680,14 @@ HOVER RULES
 
 ####################################################### */
 
+
+
+
+
+
+
+/* CARD HOVER */
+
 .card .card__image{
     width: 100%;
     position: relative;
@@ -724,3 +721,50 @@ HOVER RULES
     filter: opacity(0.6);
 }
 
+/* --------- */
+
+
+/* PROGRESS BAR */
+
+.progress-bar{
+    position: relative;
+    min-width: 50px;
+    border-radius: 50px;
+    background-color: var(--shadow_tx);
+    align-items: center;
+}
+
+.progress-bar__progress{
+    height: 4px;
+    width: 20%;
+    border-radius: 50px;
+    background-color: var(--baisc_tx);
+}
+
+.timeline__time:hover .progress-bar__progress{
+    background-color: var(--active);
+}
+
+.player__volume .row.center:last-child :hover .progress-bar__progress{
+    background-color: var(--active);
+}
+
+.player__volume .row.center:last-child :hover .pallino{
+    display: block;
+}
+
+.timeline__time:hover :hover .pallino{
+    display: block;
+}
+
+.pallino{
+    display: none;
+    position: absolute;
+    left: calc(20% - 5px);
+    height: 10px;
+    width: 10px;
+    border-radius: 999px;
+    background-color: var(--highlight);
+}
+
+/* --------- */

@@ -530,6 +530,7 @@ CONTENT RULES
     font-size: 12px;
     font-weight: 600;
     text-transform:uppercase;
+    margin-right: 26px;
 }
 
 .nav-active {
@@ -681,8 +682,30 @@ HOVER RULES
 ####################################################### */
 
 
+.size--dobled:hover{
+    transform:scale(1.2) ;    
+}
+
+li:hover h2,
+li:hover h3,
+li:hover h4,
+li:hover h5,
+li:hover h6{
+    color: var(--highlight_tx);
+}
+
+ul:hover a{
+    color: var(--highlight_tx);
+}
+
+.icon.icon--disabled:hover{
+    color: var(--highlight);
+}
 
 
+.button:hover{
+    transform: scale(1.1);
+}
 
 
 

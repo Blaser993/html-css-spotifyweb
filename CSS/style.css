@@ -526,6 +526,7 @@ CONTENT RULES
 .content__cta{
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .content__cta .row{
@@ -693,15 +694,12 @@ HOVER RULES
 .card .card__image{
     width: 100%;
     position: relative;
-    z-index: 10;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content figure .icon{
     display: none;
     position: absolute;
-    z-index: 100;
     text-align: center;
     flex-grow: 1;
     aspect-ratio: 1;

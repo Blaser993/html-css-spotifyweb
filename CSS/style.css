@@ -899,7 +899,10 @@ ul:hover a{
     background-color: var(--highlight);
 }
 
-@media screen and (max-width:850px) {
+/* MEDIAQUERY PROGRESSBAR */
+
+
+@media screen and (max-width:796px) {
     
     .progress-bar{
         position: relative;
@@ -920,8 +923,6 @@ ul:hover a{
     .player__volume .pallino{
         transform: translate(0, -2.5px);
     }
-
-
 
 }
 

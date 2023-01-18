@@ -204,7 +204,8 @@ PLAYER RULES
 
 .player__volume,
 .player__song{
-    width: 230px;
+    flex-basis: 1;
+    max-width: 230px;
 }
 
 .player__timeline{
@@ -255,7 +256,9 @@ PLAYER RULES
     color: var(--baisc_tx);
 }
 
-
+article{
+    flex-shrink: 0;
+}
 
 .icon.icon--medium{
     line-height: 36px;
@@ -279,12 +282,105 @@ PLAYER RULES
     margin-right: 12px;
 }
 
+.mobile--icon{
+    display: none;
+}
+
 /* MEDIAQUERY PLAYER */
+
+
+@media screen and (max-width:680px){
+
+    .player__volume{
+        padding-top: 22px;
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+
+    .player__volume :first-child{
+        flex-shrink: 1;
+    }
+
+    .player__volume ul{
+        margin: 0px;
+    }
+
+    .player__volume ul:last-of-type{
+        align-items: center;
+    }
+
+    .player__volume .center{
+        align-items: flex-end;
+    }
+
+    .player__volume :first-child{
+        flex-direction: column;
+        justify-items: flex-end;
+    }
+
+    .player__volume .list-menu.row {
+        flex-direction: row;
+    }
+}
+
 
 @media screen and (max-width:552px){
 
     .player__song .row :last-child {
         flex-direction: column;
+    }
+
+    .size--dobled{
+        margin: 0; 
+        font-size: unset;
+    }
+
+    .player .icon{
+        font-size: 12px;
+    }
+
+    .mobile--icon{
+        display: block;
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    .responsive--icon{
+        display: none;
+    }
+
+    .song__description{
+        display: none;
+    }
+}
+
+@media screen and (max-width:380px) {
+    
+    .player__song :not(.icon--mobile){
+        display: none;
+    }
+
+    .space--between{
+        justify-content: space-around;
+    }
+
+    .player__timeline{
+        flex-grow: 5;
+    }
+
+    .player__volume .row.center ul:first-of-type{
+        display: none;
+    }
+
+    .player__volume .row.center{
+        flex-direction: column-reverse;
+    }
+
+    .player__volume{
+        padding-bottom: 22px;
+        padding-left: 8px;
+        padding-right: 0px;
+        padding-top: 8px;
     }
 
 }
@@ -653,6 +749,19 @@ section{
 
 }
 
+@media screen and (max-width:480px) {
+
+    .card{
+        flex-basis: calc(100%) ;
+       margin: 0 ;
+    }
+
+    .content__cta{
+        display: none;
+    }
+
+}
+
 
 
 
@@ -683,7 +792,7 @@ HOVER RULES
 
 
 .size--dobled:hover{
-    transform:scale(1.2) ;    
+    transform:scale(1.1) ;    
 }
 
 li:hover h2,
